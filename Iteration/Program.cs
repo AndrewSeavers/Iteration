@@ -25,8 +25,22 @@ namespace Iteration
                 index++;
                 Console.WriteLine($"Number {index}");
                 userIn = Console.ReadLine();
-
             }
+
+            // Repeats from 1 to 50
+            for(int i = 1; i <= 50; i++)
+            {
+                // say if number is odd or even
+                string oddOrEven = (i % 2 == 0)? "even" : "odd";
+
+                Console.WriteLine($"{i} is {oddOrEven}");
+
+                // say if number is divisible by 3
+                string divisibleByThree = (i % 3 == 0) ? "is" : "is not";
+
+                Console.WriteLine($"{i} {divisibleByThree} divisible by 3");
+            }
+
             Console.ReadLine();
         }
     }
